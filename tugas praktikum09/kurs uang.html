@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konversi mata uang</title>
+    <script>
+         function konversiuang() {
+	let input = (document.form.nilai.value);
+	let hitunguang = (document.form.uangasing.value);
+	
+	let hasil = 0;
+
+	if(hitunguang == "USD"){
+		hasil = input*9915;
+	}
+	else if(hitunguang == "SGD"){
+		hasil = input*13472;
+	}
+	else if(hitunguang == "Ringgit"){
+		hasil = input*874;
+	}
+	else if(hitunguang == "EURO"){
+		hasil = input*15888;
+	}
+	else if(hitunguang == "Riyal"){
+		hasil = input*3592;
+	}
+    else if(hitunguang == "Yen"){
+        hasil = input*120;
+    }
+	else{
+		hasil = 0;
+	}
+
+	document.form.kurs.value=String("Rp. "+hasil);	
+} 
+    </script>
+</head>
+<body>
+    <form name="form">
+        <table style="width: 100%;">
+        
+        <tr>
+        <td><label for="nilai">Masukan Nilai</label></td>
+        <td><input type="text" name="nilai"></td>
+        </tr>
+
+        <tr>
+        <td>Mata Uang Asing</td>
+        <td>
+        <select name="uangasing" onchange="konversiuang()">
+        <option value="pilih">-- Pilih Mata Uang Asing --</option>
+        <option value="USD">United State Dollar</option>
+        <option value="SGD">Singapore Dollar</option>
+        <option value="Ringgit">Ringgit Malaysia</option>
+        <option value="EURO">Euro</option>
+        <option value="Riyal">Riyal Arab Saudi</option>
+        <option value="Yen">Yen Jepang</option>
+        </select>
+        </td>
+        </tr>
+        
+        <tr>
+        <td><label for="kurs">Nilai Rupiah</label></td>
+        <td><input type="text" name="kurs"></td>
+        </tr>
+        
+        <tr>
+        <td><button type="submit" onClick="konversiuang()">SUBMIT</button></td>
+        <td><button type="reset">RESET</button></td>
+        </tr>
+        <p>Jika Ingin Mengganti nilai harus di Reset dahulu</p>
+        
+        </table>
+        </form> 
+</body>
+</html>

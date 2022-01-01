@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+
+    <link rel="stylesheet" href="data.css">
+ 
+    <title>Form Validasi</title>
+    <script >
+        function inputdata(){
+      let n=document.forms['datapribadi']['nama'].value;
+      let e=document.forms['datapribadi']['email'].value;
+      let p=document.forms['datapribadi']['jam'].value;
+      let a=document.forms['datapribadi']['tujuan'].value;      
+      let b=document.forms['datapribadi']['jumlah'].value;      
+                                              
+      let tabel = document.getElementById("databel");
+      let baris = tabel.insertRow(1);
+      var kol1 = baris.insertCell(0);
+      let kol2 = baris.insertCell(1);
+      let kol3 = baris.insertCell(2);
+      let kol4 = baris.insertCell(3);
+      let kol5 = baris.insertCell(4);
+
+              
+      kol1.innerHTML = n;
+      kol2.innerHTML = e;
+      kol3.innerHTML = p;
+      kol4.innerHTML = a;
+      kol5.innerHTML = b;
+
+     }
+     </script>
+
+
+    
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><h1>Form Validasi</h1>
+          <form name="datapribadi" method="" action="">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nama pelanggan</label>
+        <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="Nama lengkap">
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" name="email" id="exampleFormControlInput2" placeholder="email">
+        <label for="exampeforcontrolInput1">Jam berangkat</label>
+        <input type="text" class="form-control" name="jam" id="exampleFormControlInput2" placeholder="00:00 - 23:59">
+        <label for="exampeforcontrolInput1">Tujuan berangkat</label>
+        <input type="text" class="form-control" name="tujuan" id="exampleFormControlInput2" placeholder="tujuan berangkat">
+        <label for="exampeforcontrolInput1">Jumlah ticket</label>
+        <input type="number" class="form-control" min="1" max="10" value="1" name="jumlah" id="exampleFormControlInput2" placeholder="jumlah">
+      </div>
+      
+      
+      <div class="form-group">
+       
+        <button type="button" onClick='inputdata()' class="btn btn-success">Submit</button>
+<button type="reset" class="btn btn-warning">Batal</button>
+      </div>
+      <div class="row">
+        <table class="table" id="databel" border="1">
+          <thead>
+        
+            <tr>
+             
+              <th scope="col">Nama</th>
+              <th scope="col">Email</th>
+              <th scope="col">Jam berangkat</th>
+              <th scope="col">Tujuan berangkat</th>
+              <th scope="col">Jumlah ticket</th>
+
+            </tr>
+          </thead>
+        </table>  
+      </div>
+    </form>
+        </div>          
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    
+ 
+   </body>
+</html>
+
+
+
+    

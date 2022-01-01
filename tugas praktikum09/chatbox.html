@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>chatbox</title>
+    <script>
+    function pesan() {
+        let message = document.createElement("P");
+        message.innerHTML = String(document.getElementById("teks_Pertama").value);
+        document.getElementById("textbox").appendChild(message);
+    }
+</script>
+</head>
+<body>
+<div class="container">
+  <div id="textbox"></div>
+       <div class="container_kirim">
+            <input id="teks_Pertama" type="text" value="" >
+            <button id="submit" type="button" onclick="pesan()">Kirim</button>
+ </div>
+</div>
+
+    
+</body>
+</html>
