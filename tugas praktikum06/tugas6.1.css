@@ -1,0 +1,58 @@
+#container-1{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}  
+.gambar1 img{
+    width: 400px;
+    height: 150px;
+    margin: 25px;
+    border: 5px solid black;
+    
+}
+.gambar2 img{
+    width: 400px;
+    height: 150px;
+    margin: 25px;
+    border: 5px solid black;
+}
+.gambar3 img{
+    width: 400px;
+    height: 150px;
+    margin: 25px;
+    border: 5px solid black;
+}
+#container-2{
+    display: flex;
+    justify-content: center;
+}
+.gambar4 img{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid black;
+}
+.gambar5 img{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid black;
+}
+.gambar6 img{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid black;
+}
+.gambar7 img{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid black;
+}
+.gambar8 img{
+    width: 220px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid black;
+}

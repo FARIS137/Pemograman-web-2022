@@ -1,0 +1,28 @@
+.box{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    position: relative;
+}
+
+
+div {
+    width: 100px;
+    height: 500px;
+    float: left;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.satu {
+    background-color: yellow;
+}
+.dua {
+    background-color: orangered;
+}
+.tiga {
+    background-color: lightgreen;
+}
+.empat {
+    background-color: lightblue;
+}

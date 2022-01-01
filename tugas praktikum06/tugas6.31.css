@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    text-align: center;
+    background: pink;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+
+.header{
+    padding: 40px;
+    background-color: rgb(100, 178, 204);
+   
+    
+}
+.footer{
+    padding: 40px;
+    background-color: rgb(100, 178, 204);
+    
+
+}
+.main{
+    display: flex;
+    flex: 1;
+    margin: 20px;
+    line-height: 200px;
+   
+}
+.aside{
+    background: rgb(51, 96, 194);
+    width: 50vh;
+    margin: 20px;
+    
+
+
+}
+.article{
+    background: rgb(211, 74, 74);
+    height: 50vh;
+    flex: 3;
+    margin: 20px;
+    
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    
+}
